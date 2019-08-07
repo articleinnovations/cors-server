@@ -21,8 +21,8 @@ const checkRateLimit = require('./node_modules/cors-anywhere/lib/rate-limit')(pr
 
 const cors_proxy = require('./node_modules/cors-anywhere/lib/cors-anywhere');
 cors_proxy.createServer({
-  originBlacklist: originBlacklist,
-  originWhitelist: originWhitelist,
+//  originBlacklist: originBlacklist,
+//  originWhitelist: originWhitelist,
   requireHeader: ['origin', 'x-requested-with'],
   checkRateLimit: checkRateLimit,
   removeHeaders: [
